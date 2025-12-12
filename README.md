@@ -37,19 +37,9 @@ Users can search flights, book tickets, view booking confirmation, and manage au
 
 ---
 
-## 📂 Project Structure
-
-project/
-│
-├── flightbooking/ # Main Django project
-├── flights/ # Flights app (search, booking)
-├── accounts/ # Login/Signup app
-├── templates/ # Global templates (base.html)
-├── venv/ # Virtual environment (ignored)
-└── db.sqlite3 # Database
 
 
----
+
 
 ## ▶️ How to Run the Project
 
@@ -59,26 +49,35 @@ git clone https://github.com/Roobak23/django-flightbooking.git
 cd django-flightbooking
 ```
 ### 2. Create virtual environment
+```bash
 python -m venv venv
+```
 
 ### 3. Activate venv
 
+```bash
 Windows:
 venv\Scripts\activate
 
 Mac/Linux:
 source venv/bin/activate
+```
 
 ### 4. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 5. Apply migrations
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ### 6. Run the server
+```bash
 python manage.py runserver
-
+```
 
 Now visit the app at:
 👉 http://127.0.0.1:8000/
