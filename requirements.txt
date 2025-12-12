@@ -1,4 +1,3 @@
-```txt
 Django==5.2.3
 pytz
 sqlparse
