@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Search Flights</h2>
+
+<form method="GET" action="/search/">
+
+    <label>Source:</label>
+    <input type="text" name="source" required><br><br>
+
+    <label>Destination:</label>
+    <input type="text" name="destination" required><br><br>
+
+    <label>Date:</label>
+    <input type="date" name="date" required><br><br>
+
+    <button type="submit">Search</button>
+</form>
+
+{% endblock %}
+

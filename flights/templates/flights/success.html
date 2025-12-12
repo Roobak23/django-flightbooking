@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Booking Successful!</h2>
+
+<p>Your flight booking is confirmed for:</p>
+
+<ul>
+    <li>Airline: {{ flight.airline }}</li>
+    <li>Route: {{ flight.source }} → {{ flight.destination }}</li>
+    <li>Date: {{ flight.date }}</li>
+</ul>
+
+<a href="/" class="btn btn-primary">Go Home</a>
+
+{% endblock %}
